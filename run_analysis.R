@@ -17,7 +17,7 @@ col_activity <- factor(data_test_y[,1], labels = activity_names)
 combined_test <- cbind(subject_test,data_test_y, col_activity, data_test_x)
 
 #read all the training data, and combine along with subject, activity id and activity name
-#using the same col_acitivity variable so that rbind doesn't give an error of different col names
+#using the same col_activity variable so that rbind doesn't give an error of different col names
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 data_train_x <- read.table("./UCI HAR Dataset/train/X_train.txt")
 data_train_y <- read.table("./UCI HAR Dataset/train/y_train.txt")
